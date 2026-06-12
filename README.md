@@ -1,2 +1,2 @@
 # BCD_counter
-It is a 4digit  BCD counter implemented in Verilog
+It is a 12 hour format clock made using bcd counters in verilog
