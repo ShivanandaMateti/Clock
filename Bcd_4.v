@@ -4,9 +4,9 @@ module top_module (
     output [3:1] ena,
     output reg [15:0] q);
     
-    assign ena[1] = (q[3:0] == 4'd9);
-    assign ena[2] = (q[7:0] == 8'b10011001);
-    assign ena[3] = (q[11:0] == 12'b100110011001);
+    assign ena[1] = (q[3:0] == 4'h9);
+    assign ena[2] = (q[7:0] == 8'h99);
+    assign ena[3] = (q[11:0] == 12'h999);
     
     bcd_counter  D0 (clk,reset,1'd1,q[3:0]);
     bcd_counter  D1 (clk,reset,ena[1],q[7:4]);
