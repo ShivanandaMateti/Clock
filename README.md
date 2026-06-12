@@ -5,7 +5,7 @@ A synchronous 12-hour digital clock implemented in Verilog HDL. The design uses 
 
 -->Features & Specifications
 
-1.12-Hour Display: Tracks hours (hh), minutes (mm), and seconds (ss) in standard 12-hour BCD format. 
+1.12-Hour Display: Tracks hours (hh), minutes (mm), and seconds (ss) in standard 12-hour BCD format.  
 2.AM/PM Logic: Uses an internal 5-bit 24-hour counter to precisely toggle the pm flag, avoiding common edge-case bugs.  
 3.Synchronous Control: Fully synchronous operation with active-high master enable (ena) and active-high reset (defaults to 12:00:00).  
 4.Modular Design: Utilizes dedicated, reusable sub-counters (bcd_counter_9 and bcd_counter_5) for clear cascading logic.  
